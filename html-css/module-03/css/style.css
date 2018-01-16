@@ -46,7 +46,7 @@
   padding: 10px;
 }
 .article ol {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .article hr{
     margin-bottom: 20px;
@@ -56,4 +56,9 @@
     margin-top: 10px;
     column-count: 2;
     color: #000080;
+}
+.article-line
+{
+  border-top: 2px solid  gray;
+  padding-top: 30px;
 }

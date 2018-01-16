@@ -1,0 +1,225 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page {
+  background-image: url(../images/page-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 230px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  margin-top: 10px;
+  width: 1023px;
+  background-color: #ffffff;
+  padding: 115px 50px;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #4e5050;
+}
+
+/* article-profile */
+.article-profile{
+  display: inline-block;
+  width: 70%;
+
+}
+.article-profile h3{
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  font-weight:bold;
+  color: #263555;
+  margin-bottom: 40px; 
+  text-transform: uppercase;
+}
+.article-profile img {
+  width: 380px;
+  height: 280px;
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.article-profile h4 {
+  font-family: Arial;
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #263555;
+  margin-bottom: 15px;
+}
+  .article-profile p {
+  font-family: Arial;
+  font-size: 13px;
+  color: #4e5050;
+}
+.inner-top{
+  padding-bottom: 35px;
+  border-bottom: 2px solid #dedbdb;
+  margin-bottom: 55px;
+}
+
+/* верхний правый список */
+.list-top{
+  /* float: right; */
+  display: inline-block;
+  width: calc(30% - 4px);
+  margin-left: -4px;
+  padding-left: 25px;
+  vertical-align: top;
+}
+.item{
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+.list-top h3 {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  font-weight:bold;
+  color: #263555;
+  margin-bottom: 40px;
+  text-transform: uppercase; 
+}
+.list-top ul{
+  display: inline-block;
+  list-style-type: none;
+  counter-reset: section;
+}
+.list-top li:before {
+  counter-increment: section;
+  content:counter(section);
+  color: #ffffff;
+  background: #38afe5;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  }
+.list-top h4 {
+  font-family: Arial;
+  font-weight: bold;
+  color: #263555;
+  margin-bottom: 15px;
+}
+
+/* нижняя половина */
+.article-offer{
+  display: inline-block;
+  width: 70%;
+}
+
+.article-offer h3{
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight:bold;
+  color: #263555;
+  margin-bottom: 65px; 
+}
+.article-offer p{
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: #263555;
+  margin-bottom: 25px;
+}
+
+.list-bottom a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263555;
+  font-size: 15px;
+}
+.list-bottom li{
+  list-style-type: none;
+}
+.list-bottom a:before{
+  display: inline-block;
+  content: "\2192";
+  padding-right: 10px;
+}
+
+.list-bottom {
+  column-count: 2;
+}
+.list-bottom li{
+  padding-top: 23px;
+}
+
+/* right-aside
+правый нижний блок */
+.right-aside{
+  display: inline-block;
+  width: 30%;
+  margin-left: -4px;
+  vertical-align: top;
+  padding-left: 30px;
+}
+.right-aside h3{
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight:bold;
+  color: #263555;
+  margin-bottom: 65px; 
+}
+.block{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #263555;
+  width: 210px;
+  padding: 20px;
+  background-color: #fcfafa;
+  border: 1px solid #dfdcdc;
+  margin: auto;
+}
+
+.block p::before{
+  content: "“";
+ font-size: 15px;
+ color: #263555;
+}
+.block p::after{
+  content: "”";
+ font-size: 15px;
+ color: #263555;
+}
+.autor{
+  padding-top: 30px;
+}
+
+.autor h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #263555;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.autor p{
+  text-align: center;
+}
