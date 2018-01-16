@@ -200,12 +200,12 @@ p {
 }
 
 .block p::before{
-  content: "“";
+  content: "\201C";
  font-size: 15px;
  color: #263555;
 }
 .block p::after{
-  content: "”";
+  content: "\201D";
  font-size: 15px;
  color: #263555;
 }
