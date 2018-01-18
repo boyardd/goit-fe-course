@@ -1,9 +1,9 @@
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 .page {
   background-image: url(../images/page-bg.jpg);
   background-size: cover;
@@ -12,6 +12,7 @@
   min-height: 100vh;
   padding-top: 230px;
   padding-bottom: 230px;
+  font-size: 16px;
 }
 .clearfix::after {
   content: "";
@@ -25,8 +26,6 @@
   background-color: #ffffff;
   padding: 115px 50px;
   margin: auto;
-  height: auto;
-  overflow: hidden;
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +77,6 @@ p {
 
 /* верхний правый список */
 .list-top{
-  /* float: right; */
   display: inline-block;
   width: calc(30% - 4px);
   margin-left: -4px;
@@ -87,7 +85,7 @@ p {
 }
 .item{
   display: inline-block;
-  width: 80%;
+  width: calc(100% - 38px);
   vertical-align: top;
   padding-bottom: 10px;
 }
@@ -100,7 +98,7 @@ p {
   text-transform: uppercase; 
 }
 .list-top ul{
-  display: inline-block;
+  /* display: inline-block; */
   list-style-type: none;
   counter-reset: section;
 }
@@ -111,7 +109,7 @@ p {
   background: #38afe5;
   display: inline-block;
   text-align: center;
-  margin: 5px 10px;
+  margin-right: 10px;
   line-height: 24px;
   width: 24px;
   height: 24px;
@@ -176,10 +174,10 @@ p {
 правый нижний блок */
 .right-aside{
   display: inline-block;
-  width: 30%;
+  width: calc(30% - 34px);
   margin-left: -4px;
   vertical-align: top;
-  padding-left: 30px;
+   margin-left: 30px;
 }
 .right-aside h3{
   font-family: "Pathway Gothic One", sans-serif;
