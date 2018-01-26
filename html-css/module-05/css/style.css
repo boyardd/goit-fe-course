@@ -1,0 +1,300 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 50px;
+}
+.page {
+  width: 1024px;
+  margin: auto;
+  /* margin-bottom: 50px; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  /* margin: auto; */
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 137px;
+  height: 137px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 137px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #263555;
+  font-size: 56px;
+  font-family: "Dorsa";
+}
+.menu {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 28px;
+  display: inline-block;
+}
+.menu a {
+  text-transform: uppercase;
+  display: block;
+  color: #ffffff;
+}
+.menu-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 58px;
+}
+.menu-item:nth-child(3) {
+  margin-right: 202px;
+}
+.menu-item:nth-last-child(1) {
+  margin-right: 0;
+}
+.menu-item a:hover {
+  color: #263555;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 20px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.submenu:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  top: -4px;
+  right: 50%;
+  border-style: solid;
+  border-width: 0 2px 4px 2px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.submenu-item {
+  margin-bottom: 5px;
+}
+.submenu-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.submenu-item > a {
+  display: inline-block;
+}
+.submenu-item a {
+  color: #6b7488;
+}
+.menu-item:hover > .submenu {
+  display: block;
+}
+/* slider */
+.wrapper {
+  /* width: 1024px; */
+  width: 100%;
+  padding: 60px;
+  /* margin: auto; */
+  background-color: #ffffff;
+}
+.slider {
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.slider img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+  height: 580px;
+}
+.top {
+  display: block;
+  position: absolute;
+  top: 218px;
+  left: 0px;
+  padding: 15px;
+  background-color: #fff;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #263555;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.bottom {
+  display: block;
+  position: absolute;
+  top: calc(218px + 53px);
+  left: 0px;
+  padding: 15px;
+  background-color: #38afe5;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #ffffff;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+.slider-controls {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+.slider-controls a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.rad-left {
+  display: inline-block;
+  width: 44px;
+  height: 88px;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  background-color: #38afe5;
+  text-align: center;
+}
+.rad-left::before {
+  content: "\2190";
+  line-height: 88px;
+  color: #ffffff;
+}
+.rad-right::after {
+  content: "\2192";
+  line-height: 88px;
+  color: #ffffff;
+}
+.rad-right {
+  margin-left: -4px;
+  display: inline-block;
+  width: 44px;
+  height: 88px;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background-color: #38afe5;
+  text-align: center;
+}
+
+.rad-left:hover {
+  background-color: rgba(56%, 175%, 229%, 0.4);
+}
+.rad-right:hover {
+  background-color: rgba(56%, 175%, 229%, 0.4);
+}
+
+/* CARD SECTIONS */
+.card-sections {
+  margin: auto;
+}
+.card-article {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #263555;
+  margin-bottom: 47px;
+}
+.card {
+  display: inline-block;
+  position: relative;
+  /* width: 287px; */
+  width: 30%;
+  margin-right: calc(5% - 8px);
+}
+.card-image {
+  display: block;
+  height: 269px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 146px;
+  height: 269px;
+  background-color: #193149;
+  margin-right: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.article-card {
+  display: inline-block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: auto;
+  color: #ffffff;
+}
+.card-description {
+  padding: 6px;
+  height: 180px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  color: #cbc6c6;
+}
+.card-link {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  color: #000000;
+  width: 60px;
+  height: 19px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  line-height: 19px;
+  margin-left: calc(100% - 72px);
+}
+
+.card:hover > .card-content{
+  display: block;
+}
+.card:nth-last-child(1){
+  margin: 0;
+}
+
+.topbutton{
+  position: fixed;
+  right: 470px;
+  bottom: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  text-align: center;
+}
+
+.topbutton::before{
+  content: "︿";
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+  line-height: 30px;
+}
