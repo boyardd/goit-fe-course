@@ -116,10 +116,8 @@ a {
 }
 /* slider */
 .wrapper {
-  /* width: 1024px; */
   width: 100%;
   padding: 60px;
-  /* margin: auto; */
   background-color: #ffffff;
 }
 .slider {
@@ -149,7 +147,7 @@ a {
 .bottom {
   display: block;
   position: absolute;
-  top: calc(218px + 53px);
+  top: calc(218px + 52px);
   left: 0px;
   padding: 15px;
   background-color: #38afe5;
@@ -281,7 +279,7 @@ a {
 
 .topbutton{
   position: fixed;
-  right: 470px;
+  right: 450px;
   bottom: 50px;
   display: inline-block;
   width: 40px;
