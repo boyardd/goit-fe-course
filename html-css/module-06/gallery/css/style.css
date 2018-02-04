@@ -1,0 +1,540 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  ul {list-style: none;}
+  a {text-decoration: none;}
+
+body {
+  font-size: 16px;
+  background-image: url(../images/bg.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+ .page-wrap{
+  width: 1020px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
+  }
+  .masthead-wrapper{
+    width: 100%;
+    height: 230px;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  header{
+   width: 100%;
+   min-height: 100%;
+   display: flex;
+   align-items:	center;
+   
+  }
+  .nav{
+    display: flex;
+    justify-content:	space-between;
+    align-items:	center;
+    min-height: 100%;
+    flex-basis: 100%;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 137px;
+    height: 137px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height:137px;
+    border-radius: 50%;
+    background-color: #fff; 
+    color: #263555;
+    font-size: 56px;
+    font-family: 'Dorsa';
+  }
+  .menu{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 28px;
+    display: inline-block;
+  }
+  .menu a{
+    text-transform: uppercase;
+    display: block;
+    color: #ffffff;
+    padding-bottom: 3px;
+  } 
+  .menu{
+    position: relative;
+    display: inline-block;
+  }
+  .menu:nth-child(3){
+    margin-right: 150px;
+  }
+  .menu a:hover{
+    color: #263555;
+  }
+  ul {list-style: none;}
+  .submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .submenu:before {
+   position: absolute;
+   content: "";
+   display: inline-block;
+   width: 0;
+   height: 0;
+   top: -4px;
+   right: 50%;
+   border-style: solid;
+   border-width: 0 2px 4px 2px;
+   border-color: transparent transparent #ffffff transparent;
+  }
+  .submenu-item{
+    margin-bottom: 5px;
+  }
+  .submenu-item:nth-last-child(1){
+    margin-bottom: 0;
+  }
+  .submenu-item a{
+    display: inline-block;
+  }
+  .submenu-item a{ color: #6b7488;}
+  .menu:hover > .submenu{
+    display: block;
+  }
+.main{
+  width: 1020px;
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+.main-inf{
+  display: flex;
+  border-bottom: 2px solid #dedbdb;
+  padding-bottom: 50px;
+  margin-bottom: 55px;
+}
+.article-profile{
+  display: inline-block;
+  flex: 0 0 70%;
+  margin-right: 20px;  
+ }
+ 
+ .article-profile h3{
+   font-family: "Pathway Gothic One", sans-serif;
+   font-size: 32px;
+   font-weight:bold;
+   color: #263555;
+   margin-bottom: 40px; 
+   text-transform: uppercase;
+ }
+ .article-profile img {
+   width: 380px;
+   float: left;
+   margin-right: 15px;
+   /* display: inline-block; */
+   margin-bottom: 18px;
+ }
+ .article-profile h4 {
+   font-family: Arial;
+   padding-left: 15px;
+   font-size: 15px;
+   font-weight: bold;
+   color: #263555;
+   margin-bottom: 15px;
+ }
+   .article-profile p {
+   font-family: Arial;
+   font-size: 13px;
+   color: #4e5050;
+ }
+
+ .principles{
+  display: inline-block;
+  flex: 0 1 30%;
+ }
+ .principles-article{
+  display: inline-block;
+  width: calc(100% - 38px);
+  vertical-align: top;
+  /*margin-bottom: 10px;*/
+}
+.principles-list{
+	margin-bottom: 10px;
+}
+
+ .principles-list:last-child{
+	margin-bottom: 0px;
+}
+
+.principles h3 {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  font-weight:bold;
+  color: #263555;
+  margin-bottom: 40px;
+  text-transform: uppercase; 
+}
+.principles ul{
+  /* display: inline-block; */
+  list-style-type: none;
+  counter-reset: section;
+}
+.principles li:before {
+  counter-increment: section;
+  content:counter(section);
+  color: #ffffff;
+  background: #38afe5;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  }
+.principles h4 {
+  font-family: Arial;
+  font-weight: bold;
+  color: #263555;
+  margin-bottom: 15px;
+}
+
+/* bottom block */
+.offer-inf{
+  display: flex;
+}
+.article-offer{
+  display: inline-block;
+  flex: 0 0 70%;
+  margin-right: 20px;  
+}
+.article-offer h3{
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight:bold;
+  color: #263555;
+  margin-bottom: 65px; 
+}
+.article-offer p{
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: #263555;
+  margin-bottom: 25px;
+}
+
+.list-offer a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263555;
+  font-size: 15px;
+}
+.list-offer li{
+  list-style-type: none;
+}
+.list-offer a:before{
+  display: inline-block;
+  content: "\2192";
+  padding-right: 10px;
+}
+
+.list-offer {
+  column-count: 2;
+}
+.list-offer li{
+  margin-bottom: 23px;
+}
+.list-offer li:last-child{
+  margin-bottom: 0;
+}
+
+/* aside bottom */
+.aside-testimonal{
+  display: inline-block;
+  flex: 0 1 30%;
+ /*  padding-right: 5px; */
+  }
+ 
+ .aside-testimonal h3{
+   font-family: "Pathway Gothic One", sans-serif;
+   font-size: 32px;
+   text-transform: uppercase;
+   font-weight:bold;
+   color: #263555;
+   margin-bottom: 65px; 
+ }
+ .testimonal{
+   position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   color: #263555;
+   width: 210px;
+   padding: 20px;
+   background-color: #fcfafa;
+   border: 1px solid #dfdcdc;
+   margin: auto;
+ }
+ 
+ .testimonal p::before{
+   content: "\201C";
+  font-size: 15px;
+  color: #263555;
+ }
+ .testimonal p::after{
+   content: "\201D";
+  font-size: 15px;
+  color: #263555;
+ }
+ .autor{
+   padding-top: 30px;
+ }
+ 
+ .autor h4{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #263555;
+   margin-bottom: 16px;
+   text-align: center;
+ }
+ .autor p{
+   text-align: center;
+ }
+ .testimonal::before,
+ .testimonal::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: calc(0% - 25px);
+  left: calc(50% - 15px);
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #dfdcdc transparent transparent transparent;
+}
+
+ .testimonal::after {
+  border-style: solid;
+  border-width: 25px 15px 0 15px;
+  border-color: #fcfafa transparent transparent transparent;
+  bottom: -23px;
+
+ }
+ /* FOOTER */
+ .footer-wrap{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .list-wrap{
+  width: 100%;
+  background-color: #30455b;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-list{
+  display: flex;
+  justify-content: space-around;
+  /* padding: 40px; */
+  flex-wrap: wrap;
+  flex-basis: 70%;
+}
+.footer-link {
+  text-transform: uppercase;
+  width: 30%;  
+}
+.footer-link-item{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+}
+.contacts{
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contacts-link{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+}
+.contacts-link{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.social-link{
+  margin: auto;
+  padding: 20px;
+}
+.link-item{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  margin: 10px;
+}
+.twitter{
+  background-image: url(../images/twitter.svg);
+}
+.facebook{
+  background-image: url(../images/facebook.png);
+}
+.google-plus{
+  background-image: url(../images/google-plus.png);
+}
+.linkedin{
+  background-image: url(../images/linkedin.png);
+}
+.link-item:last-child{
+  margin-right: 0;
+}
+.design-team{
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  
+}
+.copyright::after{
+  content: " \00A9 " " ";
+}
+.design-team p{
+  display: inline-block;
+  border-right: 2px solid #ffffff;
+  padding-left: 3px;
+  padding-right: 10px;
+}
+.design-team p:last-child{
+  border-right: 0;
+}
+
+.topbutton{
+  position: fixed;
+  right: 200px;
+  bottom: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  text-align: center;
+}
+
+.topbutton::before{
+  content: "︿";
+  font-size: 20px;
+  font-weight: bolder;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+
+/*GALLERY*/
+
+.gallery{
+  min-width: 100%;
+  margin: auto;
+  
+}
+.article{
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #263555;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.gallery-list{
+  display: flex;
+  flex-wrap: wrap;
+/*   border: 2px solid; */
+  justify-content: space-between;
+}
+.gallery-item{
+  flex-basis: 285px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.gallery-item img{
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  /*background-repeat: no-repeat;
+  background-position: center;*/
+}
+.gallery-item:nth-last-child(-n+3){
+  margin-bottom: 0px;
+}
+.gallery-item:hover::after {
+  content: '';
+	background-color: #000000;
+	height: 100%;
+  opacity: 0.5;
+	position: absolute;
+	top: 0;
+  left: 0;
+	width: 100%;
+  }
+.pic:hover::after {
+	opacity: 0;
+}
+.gallery-icon {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/gallery/zoom-icon.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+.gallery-item:hover>.gallery-icon{
+  display: block;
+  z-index: 1;
+}
+
+
