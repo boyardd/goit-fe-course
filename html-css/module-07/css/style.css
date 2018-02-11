@@ -1,0 +1,338 @@
+@import url('var.css');
+html{
+    font-size: 16px;
+}
+/* ------ FONTS ------ */
+@font-face {
+    font-family: Dancing;
+    src: url('../fonts/dancing-700.woff') format('woff'),
+        url('../fonts/dancing-700.woff2') format('woff2');
+        font-weight: 700;       
+}
+/* lato-italic - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'),
+         url('../fonts/lato-v14-latin-italic.woff2') format('woff2'), 
+         url('../fonts/lato-v14-latin-italic.woff') format('woff');
+  }
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500italic - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+         url('../fonts/roboto-v18-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v18-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* ------ BODY ------ */
+body{
+    padding: 3rem;
+    background-color: var(--body-bg-color);
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ----- HEAD ------- */
+.masthead-wrap{
+    width: 87.5rem;
+    height: 43.75rem;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../image/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+.masthead{
+    max-width: 67.5rem;
+    /* background-color: #fff; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    margin-bottom: 5rem;
+    align-items: baseline;
+}
+.logo{
+    font-family: Dancing, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: var(--yellow-color);
+    text-decoration: none;
+    /* font-style: italic; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+font-family: Montserrat, sans-serif;
+font-weight: 400;
+color: var(--primary-white-color);
+text-transform: uppercase;
+text-decoration: none;
+}
+.nav-item{
+    margin-right: 2.437rem;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+.hero{
+    text-align: center; 
+}
+.hero-hello{
+    color: var(--primary-white-color);
+    font-size: 2.5rem;
+    font-family: Lato, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 3.125rem;
+}
+.hero-title{
+    color: var(--primary-white-color);
+    font-size: 4.685rem;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3.125rem;
+}
+.hero-button{
+    display: inline-block;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    width: 14.875rem;
+    line-height: 4rem;
+    background-color: var(--yellow-color);
+    text-decoration: none;
+}
+.hero-button:hover{
+    background-color: var(--hover-button-color);
+    transition-duration: 0.3s;
+}
+
+/* SERVICES WRAP */
+.service-wrap{
+    width: 87.5rem;
+    margin: auto;
+    background-color: #ffffff;
+}
+.service{
+    padding: 7.5rem 14rem;
+}
+.service-header{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4.375rem;
+}
+.service-title{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;  
+}
+.service-subtitle{
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--content-color);
+}
+.service-item{
+    display: flex;
+}
+.service-items{
+    display: inline-block;
+    text-align: center;
+}
+.service-icon {
+    display: inline-block;
+    width: 4.562rem;
+    height: 4.562rem;
+    border-radius: 50%;
+    border: 0.1875rem solid #fed136;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+}
+.basket{
+    background-image: url('../image/basket.svg');
+}
+.laptop{
+    background-image: url('../image/laptop-1.png');
+}
+.lock{
+    background-image: url('../image/lock.svg');
+}
+.service-name{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.service-description{
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--content-color);
+}
+.service-items:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.contact-wrap{
+    width: 87.5rem;
+    height: 43.75rem;
+    margin: auto;
+    background: url('../image/contact_bg.png')
+    no-repeat center right;
+    background-color: #222222; 
+}
+.contact-header{
+    margin: auto;
+    margin-bottom: 5rem;
+}
+.contact{
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+.contact-title{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;  
+    color: var(--primary-white-color);
+    text-align: center;
+}
+.contact-subtitle{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--content-color);
+}
+.form{
+    width: 58.75rem;
+    margin: auto;
+    text-align: center;
+    
+}
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+}
+.input-wrap{
+    width: 28.437rem;
+    display: inline-block;
+}
+.form-input{
+    width: 100%;
+    border-radius: 0.4rem;
+    height: 3.125rem;
+    outline: 0;
+    font-family: Motserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--content-color);
+    padding: 1rem;
+    border: 0.1875rem solid #ffffff;
+}
+.form-input:not(:last-child){
+    margin-bottom: 1.625rem;
+}
+.form-input::placeholder{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--placeholder-color);
+}
+
+.textarea{
+    display: inline-block;
+    width: 28.4375rem;
+    height: 12.625rem;
+    border-radius: 0.4rem;
+    outline: 0;
+    padding: 1rem;
+    resize: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--content-color);
+    border: 0.1875rem solid #ffffff;
+}
+.textarea::placeholder{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--placeholder-color);
+}
+.contact-button{
+    display: inline-block;
+    border-radius: 0.4rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    width: 14.875rem;
+    line-height: 4rem;
+    background-color: var(--yellow-color);
+    text-decoration: none;
+    outline: 0;
+    border: 0.1875rem solid var(--yellow-color);
+}
+.contact-button:hover{
+    background-color: var(--hover-button-color);
+    transition-duration: 0.3s;
+}

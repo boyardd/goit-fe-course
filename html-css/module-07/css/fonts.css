@@ -1,0 +1,6 @@
+@font-face {
+    font-family: Dancing;
+    src: url('../fonts/dancing-700.woff') format('woff'),
+        url('../fonts/dancing-700.woff2') format('woff2');
+        font-weight: 700;
+}
