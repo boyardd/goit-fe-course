@@ -207,6 +207,8 @@ body {
   /* display: inline-block; */
   list-style-type: none;
   counter-reset: section;
+  display: flex;
+  flex-direction: column;
 }
 .principles li:before {
   counter-increment: section;
@@ -432,6 +434,7 @@ body {
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+  text-align: center;
   
 }
 .copyright::after{
