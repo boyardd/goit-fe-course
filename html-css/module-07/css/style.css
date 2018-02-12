@@ -58,7 +58,7 @@ html{
 
 /* ------ BODY ------ */
 body{
-    padding: 3rem;
+    /* padding: 3rem; */
     background-color: var(--body-bg-color);
     min-height: 100vh;
 }
@@ -69,7 +69,7 @@ a{
 
 /* ----- HEAD ------- */
 .masthead-wrap{
-    width: 87.5rem;
+    /* width: 87.5rem; */
     height: 43.75rem;
     background-image: linear-gradient(
       to top,
@@ -130,6 +130,7 @@ text-decoration: none;
     margin-bottom: 3.125rem;
 }
 .hero-title{
+    display: block;
     color: var(--primary-white-color);
     font-size: 4.685rem;
     font-family: Montserrat, sans-serif;
@@ -157,38 +158,41 @@ text-decoration: none;
 
 /* SERVICES WRAP */
 .service-wrap{
-    width: 87.5rem;
+    /* width: 87.5rem; */
     margin: auto;
     background-color: #ffffff;
 }
 .service{
     padding: 7.5rem 14rem;
 }
-.service-header{
+.section-header{
     margin: auto;
     text-align: center;
     margin-bottom: 4.375rem;
 }
-.service-title{
+.section-title{
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1.25rem;  
 }
-.service-subtitle{
+.section-subtitle{
     font-family: Roboto, sans-serif;
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 500;
     color: var(--content-color);
 }
-.service-item{
+.service-list{
     display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 .service-items{
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
+    flex-basis: 30%;
 }
 .service-icon {
     display: inline-block;
@@ -223,43 +227,45 @@ text-decoration: none;
     font-size: 1rem;
     color: var(--content-color);
 }
-.service-items:not(:last-child){
+/* .service-items:not(:last-child){
     margin-right: 2.5rem;
-}
+} */
+
+/* -------- CONTACT -------- */
 
 .contact-wrap{
-    width: 87.5rem;
+    /* width: 87.5rem; */
     height: 43.75rem;
     margin: auto;
     background: url('../image/contact_bg.png')
     no-repeat center right;
     background-color: #222222; 
 }
-.contact-header{
+/* .contact-header{
     margin: auto;
     margin-bottom: 5rem;
-}
+} */
 .contact{
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
 }
 .contact-title{
-    font-family: Montserrat, sans-serif;
+    /* font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     text-transform: uppercase;
-    margin-bottom: 1.25rem;  
+    margin-bottom: 1.25rem;   */
     color: var(--primary-white-color);
-    text-align: center;
+    /* text-align: center; */
 }
-.contact-subtitle{
+/* .contact-subtitle{
     text-align: center;
     font-family: Roboto, sans-serif;
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 500;
     color: var(--content-color);
-}
+} */
 .form{
     width: 58.75rem;
     margin: auto;
@@ -272,8 +278,11 @@ text-decoration: none;
     margin-bottom: 1.75rem;
 }
 .input-wrap{
-    width: 28.437rem;
-    display: inline-block;
+    flex-basis: 40%;
+    flex-grow: 1;
+    margin-right: 2rem;
+    /* width: 28.437rem; */
+    /* display: inline-block; */
 }
 .form-input{
     width: 100%;
@@ -298,9 +307,11 @@ text-decoration: none;
 }
 
 .textarea{
-    display: inline-block;
-    width: 28.4375rem;
-    height: 12.625rem;
+    flex-basis: 40%;
+    flex-grow: 1;
+    /* display: inline-block; */
+    /* width: 28.4375rem; */
+    /* height: 12.625rem; */
     border-radius: 0.4rem;
     outline: 0;
     padding: 1rem;
