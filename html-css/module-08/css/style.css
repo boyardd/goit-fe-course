@@ -1,0 +1,313 @@
+@import url('var.css');
+/* html{
+    font-size: 16px;
+} */
+body{
+    font-size: 16px;
+    height: 100vh;
+}
+
+a{
+ text-decoration: none;
+}
+
+/*-------- HEADER -------*/
+.masthead-wrap{
+    min-width: 100vh;
+    background-image: url('../images/image-bg.png');
+    height: 43.75rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1915;
+    padding-top: 2.8125rem;
+    padding-left: 5%;
+    padding-right: 5%;  
+}
+
+.logo{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: var(--title-white-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.header{
+    margin: auto;
+    text-align: center;
+    /* max-width: 67.143%; */
+    max-width: 58.75rem;
+          
+}
+
+
+.nav-button{
+    box-sizing: content-box;
+    text-align: center;
+    /* vertical-align: middle; */
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--title-white-color);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.625rem;
+    border: 0.125rem solid transparent;
+    border-radius: 50px;
+}
+.nav-button:hover{
+    border-color: #ffffff;
+}
+
+.hero-title{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--title-white-color);
+    font-size: 3.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 9.375rem;
+    margin-bottom: 2.5rem;
+}
+.hero-title-nl{
+    display: block;
+}
+.hero-button{
+    margin-top: 2.5rem;;
+    text-align: center;
+    /* width: 12rem; */
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--title-white-color);
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 50px;
+    background-color: var(--button-bg-color);
+}
+.hero-subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--content-color);
+    line-height: 1.25rem;
+}
+
+/* ------ PARTNERS ------- */
+.partners-wrap{
+    background-color: var(--partners-bg-color);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4.375rem;
+}
+.partners{
+    margin: auto;
+    padding-top: 4.375rem;
+    max-width: 58.75rem;
+    
+}
+
+.partners-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.375rem;
+}
+.card-photo{
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card-article{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-bottom: 0.9375rem;
+    margin-top: 1rem;
+}
+
+.position-wrap{
+width: 100%;
+height: 100%;
+display: block;
+position: relative;
+}
+.card-link{
+    display: inline-block;
+}
+.card-photo{
+    margin: auto;  
+}
+
+.card-icon{
+    position: absolute;
+    right: 0%;
+    top: 75%;
+    border-radius: 50%;
+    display: block;
+    border: 3px solid #ffffff;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+}
+.icon-1{
+    background-image: url('../images/icon-1.png');
+    background-color: #ff4e50;
+}
+.icon-2{
+    background-image: url('../images/icon-2.png');
+    background-color: #1cd7ad;
+}
+.icon-3{
+    background-image: url('../images/icon-3.png');
+    background-color: #ffa507;
+}
+.icon-4{
+    background-image: url('../images/icon-4.png');
+    background-color: #4e73db;
+}
+.card-description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: var(--text-grey-color);
+}
+.card-list{
+    text-align: center;
+}
+.partners-button{
+    margin-top: 2.1875rem;
+    text-align: center;
+    /* width: 12rem; */
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 50px;
+    border: 0.125rem solid var(--button-bg-color);
+    /* background-color: var(--button-bg-color); */
+}
+.partners{
+    text-align: center;
+}
+
+/******************* MEDIA *********************/
+/* @media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .masthead-wrap{
+        background-image: url('../images/image-bg-2x.png');
+        background-color: #1a1915;
+    }
+} */
+
+
+
+/* Small  - Phones */
+@media(min-width: 320px) and (max-width : 479px) {
+.masthead-wrap{
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+}
+.header{
+    padding-top: 1.25rem;
+   
+}
+.navigation{
+    margin-bottom: 6.25rem;
+}
+
+.hero-title{
+    margin-top: 2.25rem;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+.hero-subtitle{
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+.hero-button{
+    width: 17.5rem;
+}
+
+.partners-wrap{
+    padding-top: 4.375rem;
+    text-align: center;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
+.card-photo{
+    margin: auto;
+}
+
+.card-list:not(:last-child){
+    margin-bottom: 1.875rem;
+}
+.partners-button{
+    margin-top: 1.875rem;
+}
+.partners-title{
+    margin-bottom: 0.9375rem;
+}
+}
+/* ------ Tablets ------- */
+@media(min-width: 480px) and (max-width : 767px){
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.partners-list{
+    margin-top: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-list{
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+.card-list:nth-child(-n+2){
+    margin-bottom: 3.4375rem;
+
+}
+.card-list:nth-child(odd){
+    margin-right: 2.5rem;
+}
+}
+
+/* --- DESKTOP ---- */
+@media(min-width: 768px){
+    .header-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .partners-list{
+        margin-top: 1.875rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card-list{
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+    
+    .card-list:not(:last-child){
+        margin-right: 2.5rem;
+    }
+    }
+    
