@@ -13,7 +13,6 @@ a{
 
 /*-------- HEADER -------*/
 .masthead-wrap{
-    min-width: 100vh;
     background-image: url('../images/image-bg.png');
     height: 43.75rem;
     background-repeat: no-repeat;
