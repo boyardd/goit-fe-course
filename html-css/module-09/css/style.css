@@ -112,6 +112,10 @@ a{
     border-radius: 50%;
     object-fit: cover;
 }
+
+.test-12{
+    border-bottom: 1px solid #000;
+}
 .card-icon{
     position: absolute;
     right: 0%;
