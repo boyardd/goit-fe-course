@@ -13,6 +13,12 @@ html {
   box-sizing: inherit;
 }
 
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -46,6 +52,14 @@ ul {
       rgba(243, 129, 129, 0.81) 100%
     ),
     url("../images/header_bg.png");
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(252, 227, 138, 0.81)),
+      to(rgba(243, 129, 129, 0.81))
+    ),
+    url("../images/header_bg.png");
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.81) 0%,
@@ -77,7 +91,7 @@ ul {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: baseline;
   padding-top: 28px;
   margin-bottom: 170px;
 }
@@ -95,16 +109,35 @@ ul {
   text-transform: uppercase;
 }
 
+.nav-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 620px;
+  width: 490px;
 }
 
-.nav__link--head-modif {
+.nav-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.nav__link--head-modif,
+.nav-user__link {
   color: var(--primary-white-color);
   font-family: var(--primary-font);
   font-size: 14px;
@@ -112,13 +145,19 @@ ul {
   text-transform: uppercase;
 }
 
-.nav__link {
+.nav__link,
+.nav-user__link {
   display: block;
   padding-bottom: 12px;
   border-bottom: 3px solid transparent;
 }
 
 .nav__link:hover {
+  color: var(--yellow-color);
+  border-color: var(--yellow-color);
+}
+
+.nav-user__link:hover {
   color: var(--yellow-color);
   border-color: var(--yellow-color);
 }
@@ -161,7 +200,7 @@ ul {
 
 /* SERVICES */
 .section-header {
-  margin-top: 45px;
+  padding-top: 45px;
 }
 
 .section-header__caption {
@@ -223,7 +262,7 @@ ul {
   margin-bottom: 18px;
 }
 
-.services-list__item--mb:nth-child(-n + 3) {
+.services-list__item:nth-child(-n + 3) {
   margin-bottom: 100px;
 }
 
@@ -366,6 +405,42 @@ ul {
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
+.team-card__content::after {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  content: "";
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.81)),
+    to(rgba(243, 129, 129, 0.81))
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.81) 0%,
+    rgba(243, 129, 129, 0.81) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.81) 0%,
+    rgba(243, 129, 129, 0.81) 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.81) 0%,
+    rgba(243, 129, 129, 0.81) 100%
+  );
+  -webkit-transition: opacity 0;
+  -o-transition: opacity 0;
+  transition: opacity 0;
+}
+
 .team-card__icons {
   width: 224px;
   height: 57px;
@@ -485,10 +560,6 @@ ul {
   margin-bottom: 10px;
 }
 
-.footer__meta::before {
-  content: "\00A9" " ";
-}
-
 .footer__meta {
   font-family: var(--primary-font);
   font-size: 14px;
@@ -523,27 +594,6 @@ ul {
   font-size: 14px;
 }
 
-.footer-form__input:-ms-input-placeholder {
-  font-family: var(--secondary--font);
-  font-weight: 300;
-  font-style: italic;
-  font-size: 14px;
-}
-
-.footer-form__input::-ms-input-placeholder {
-  font-family: var(--secondary--font);
-  font-weight: 300;
-  font-style: italic;
-  font-size: 14px;
-}
-
-.footer-form__input::placeholder {
-  font-family: var(--secondary--font);
-  font-weight: 300;
-  font-style: italic;
-  font-size: 14px;
-}
-
 .footer-form__button {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -554,4 +604,40 @@ ul {
   background-color: var(--aqua-color);
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/* MEDIA */
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+  .masthead-wrap {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(rgba(252, 227, 138, 0.81)),
+        to(rgba(243, 129, 129, 0.81))
+      ),
+      url("../images/header_bg.png");
+    background-image: -webkit-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../images/header_bg.png");
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../images/header_bg.png");
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.81) 0%,
+        rgba(243, 129, 129, 0.81) 100%
+      ),
+      url("../images/header_bg.png");
+    background-size: cover;
+  }
 }
